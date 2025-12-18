@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import 'tailwindcss';
+
+:root {
+
+  /* Card border colors */
+  --supervisor-b: hsl(180, 62%, 55%);
+  --teamBuilder-b:  hsl(0, 78%, 62%);
+  --karma-b: hsl(34, 97%, 64%);
+  --calc-b: hsl(212, 86%, 64%);
+
+  /* Headings color */
+  --text-h: hsl(234, 12%, 34%);
+
+  /* Paragrapth color */
+  --text-p: hsl(212, 6%, 44%);
+}
+
+body {
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  background: #fff;
+}
