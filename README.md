@@ -20,7 +20,7 @@ The focus of this project is layout composition, responsive behavior, and reusab
 ### Layout & Implementation Explanation
 The overall layout is controlled using a responsive grid configuration:
 
-grid-rows-1 lg:grid-cols-[1fr_1.25fr_1fr]
+    grid-rows-1 lg:grid-cols-[1fr_1.25fr_1fr]
 
 ### Card Rendering Logic (Array-Based Layout)
 
@@ -28,19 +28,17 @@ The cards are stored in an array of objects, and specific items from the array a
 
 The layout is implemented as follows:
 
-<div className="flex justify-center">
-  <Card {...card[0]} />
-</div>
+      <div className="flex justify-center">
+        <Card {...card[0]} />
+      </div>
+      <div className="grid grid-rows-2 gap-6">
+        <Card {...card[1]} />
+        <Card {...card[2]} />
 
-<div className="grid grid-rows-2 gap-6">
-  <Card {...card[1]} />
-  <Card {...card[2]} />
-</div>
-
-<div className="flex justify-center">
-  <Card {...card[3]} />
-</div>
-</section>
+      </div>
+      <div className="flex justify-center">
+        <Card {...card[3]} />
+      </div>
 
 ### Built with
 
